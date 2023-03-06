@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    padding: 13px 33px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border-style: none;
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFF;
+}
+
+.title {
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-align: left;
+    color: #E3B873;
+}
+
+.subtitle {
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.header {
+    background-color: #131313;
+}
+
+.header-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1256px;
+    height: 83px;
+    align-items: center;
+}
+
+.company-name {
+    margin-right: auto;
+    color: #E3B873;
+}
+
+.nav {
+    margin-right: 67px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 47px;
+}
+
+.nav-link {
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color:#FFF;
+}
+
+.header-phone-number {
+    text-decoration: underline;
+    font-family: Nunito Sans;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: #E3B873;
+}
+
+.header-btn {
+    margin-left: 45px;
+}
+
+/* HERO */
+
+.section-hero {
+    padding-top: 194px;
+    padding-bottom:208px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/image-hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-hero-content {
+    width: 520px;
+    height: 305px;
+    margin-left: 134px;
+}
+
+.section-hero-title {
+    font-family: Yeseva One;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+}
+
+.section-hero-title-city {
+    color: #E3B873;
+}
+
+.section-hero-text {
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFF;
+}
+
+.btn-hero {
+    width: 207px;
+    height: 51px;
+    white-space: nowrap;
+}
+
+.btn-hero-calculate {
+    margin-right: 20px;
+}
+
+.btn-hero-submit {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFF;
+}

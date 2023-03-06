@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container header-container">
             <div class="company-name">
                 IC "Repair Design Project"
@@ -35,18 +41,20 @@
                 </ul>
             </nav>
             <a href="tel:+79287683239" class="header-phone-number">+7 (928) 768-32-39</a>
-            <button class="btn">Request a call</button>
+            <button class="btn header-btn">Request a call</button>
         </div>
     </header>
 
     <main>
         <!-- Hero -->
         <section class="section-hero">
-            <div class="container section-hero-contrainer">
-                <h1 class="tittle section-hero-tittle">Turnkey Repair in the city of Rostov-on-Don</h1>
-                <p class="section-hero-text">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-                <button class="btn btn-calculate">CALCULATE THE COST</button>
-                <button class="btn btn-submit">SUBMIT YOUR APPLICATION</button>
+            <div class="container section-hero-container">
+                <div class="section-hero-content">
+                    <h1 class="title section-hero-title">Turnkey Repair in the city of <span class="section-hero-title-city">Rostov-on-Don</span></h1>
+                    <p class="section-hero-text">Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+                    <button class="btn btn-hero btn-hero-calculate">CALCULATE THE COST</button>
+                    <button class="btn btn-hero btn-hero-submit">SUBMIT YOUR APPLICATION</button>
+                </div>
             </div>
         </section>
         <!-- Completed projects -->
