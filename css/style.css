@@ -57,6 +57,8 @@ ul {
     text-align: center;
 }
 
+/* HEADER */
+
 .header {
     background-color: #131313;
 }
@@ -163,4 +165,138 @@ ul {
 .btn-hero-submit {
     background: rgba(0, 0, 0, 0);
     border: 1px solid #FFF;
+}
+
+/* COMPLETED PROJECTS */
+
+.section-project {
+    padding-top: 107px;
+    padding-bottom: 414px;
+    background: #131313;
+}
+
+.section-project-contrainer {
+    width: 1440px;
+}
+
+.section-project-content {
+    width: 1171px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 91px;
+    height: 553px;
+}
+
+.section-project-title {
+    margin-top: 69px;
+    margin-bottom: 34px;
+    max-width: 200px;
+}
+
+.section-project-text  {
+    margin-top: 0;
+    max-width: 441px;
+    margin-right: 50px;
+    margin-bottom: 42px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFF;
+}
+
+.description-project-list {
+    margin-bottom: 68px;
+    width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 34px;
+}
+
+.description-project-item {
+    flex: 1 1 50%;
+}
+
+.description-project-title {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E3B873;
+}
+
+.description-project-text {
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: top;
+    color: #FFF;
+}
+
+.slider-list{
+    display: inline;
+    margin-left: 29px;
+    margin-right: 29px;
+}
+
+.slider-item {
+    display: inline;
+}
+
+.slider-item:not(:last-child) {
+    margin-right: 17px;
+}
+
+.address-project-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address-project-item {
+    margin-bottom: 52px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.address-project-item:not(:last-child){
+    margin-right: 60px;
+}
+
+.address-project-item:hover {
+    margin-bottom: 50px;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.section-project-subtitle {
+    color: #FFF;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.section-project-cam-svg {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.cam {
+    transform: translateY(10px);
+    margin: 0 8px;
 }
