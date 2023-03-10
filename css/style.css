@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 img {
@@ -16,6 +17,31 @@ ul {
     list-style: none;
 }
 
+label {
+    text-align: start;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+input::placeholder {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+
 .container {
     max-width: 1440px;
     margin-right: auto;
@@ -28,7 +54,7 @@ ul {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     border-style: none;
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 11px;
     font-style: italic;
     font-weight: 400;
@@ -39,7 +65,7 @@ ul {
 }
 
 .title {
-    font-family: Yeseva One;
+    font-family: 'Yeseva One';
     font-size: 27px;
     font-weight: 400;
     line-height: 37px;
@@ -49,7 +75,7 @@ ul {
 }
 
 .subtitle {
-    font-family: Yeseva One;
+    font-family: 'Yeseva One';
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -90,7 +116,7 @@ ul {
 }
 
 .nav-link {
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;
@@ -100,7 +126,7 @@ ul {
 
 .header-phone-number {
     text-decoration: underline;
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;
@@ -124,12 +150,11 @@ ul {
 
 .section-hero-content {
     width: 520px;
-    height: 305px;
     margin-left: 134px;
 }
 
 .section-hero-title {
-    font-family: Yeseva One;
+    font-family: 'Yeseva One';
     font-size: 40px;
     font-weight: 400;
     line-height: 53px;
@@ -143,7 +168,7 @@ ul {
 }
 
 .section-hero-text {
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 22px;
     font-weight: 400;
     line-height: 36px;
@@ -153,8 +178,8 @@ ul {
 }
 
 .btn-hero {
-    width: 207px;
-    height: 51px;
+    min-width: 207px;
+    min-height: 51px;
     white-space: nowrap;
 }
 
@@ -170,23 +195,20 @@ ul {
 /* COMPLETED PROJECTS */
 
 .section-project {
+    max-height: 1074px;
     padding-top: 107px;
     padding-bottom: 414px;
     background: #131313;
 }
 
-.section-project-contrainer {
-    width: 1440px;
-}
-
 .section-project-content {
-    width: 1171px;
-    margin: auto auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: auto auto;
     margin-bottom: 91px;
-    height: 553px;
+    max-width: 1171px;
+    max-height: 553px;
 }
 
 .section-project-title {
@@ -197,10 +219,10 @@ ul {
 
 .section-project-text  {
     margin-top: 0;
-    max-width: 441px;
     margin-right: 50px;
     margin-bottom: 42px;
-    font-family: Nunito Sans;
+    max-width: 441px;
+    font-family: 'Nunito Sans';
     font-size: 14px;
     font-weight: 400;
     line-height: 27px;
@@ -210,10 +232,10 @@ ul {
 }
 
 .description-project-list {
-    margin-bottom: 68px;
-    width: 380px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 68px;
+    width: 380px;
     row-gap: 34px;
 }
 
@@ -224,7 +246,7 @@ ul {
 .description-project-title {
     margin-top: 0;
     margin-bottom: 9px;
-    font-family: Yeseva One;
+    font-family: 'Yeseva One';
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -234,7 +256,7 @@ ul {
 }
 
 .description-project-text {
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 13px;
     font-weight: 400;
     line-height: 21px;
@@ -284,19 +306,153 @@ ul {
 }
 
 .section-project-subtitle {
+    margin: 0 0 12px 0px;
     color: #FFF;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
 
-.section-project-cam-svg {
+.section-project-video {
+    position: relative;
+    width: 817px;
+    height: 434px;
+    margin-top: 31px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/video-poster.png") no-repeat;
 }
 
-.cam {
-    transform: translateY(10px);
-    margin: 0 8px;
+.video-play-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+    z-index: 10;
+    background: url('../img/video-play-button.svg') 50% 50% no-repeat; 
+    border: none;   
+}
+
+/* ONLINE CONTROL */
+
+.section-online-control {
+    padding-top: 271px;
+    padding-bottom: 76px;
+}
+
+.section-online-control-container {
+    text-align: center;
+}
+
+.section-online-control-description {
+    margin: 34px auto 93px auto;
+    max-width: 680px;
+    min-height: 130px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    color: #363636;
+}
+
+.section-online-control-form {
+    display: flex;
+    max-width: 770px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 35px;
+}
+
+.section-online-control-input {
+    width: 231px;
+}
+
+.section-online-control-btn-submit{
+    min-width: 200px;
+    min-height: 51px;
+}
+
+.label-checkbox{
+    margin-left: 8px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #181818;
+}
+
+/* TYPES OF REPAIR */
+.section-types-container {
+    max-width: 1236px;
+}
+
+.types-list {
+    margin-top: 31px;
+    margin-bottom: 230px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.types-item {
+    max-width: 392px;
+    min-height: 608px;
+    flex: 0 0 33.33%;
+    padding: 294px 31px 0px 31px;
+}
+
+.types-item:nth-child(1){
+    background: url('../img/types-img-1.jpg') no-repeat;
+}
+
+.types-item:nth-child(2){
+    background: url('../img/types-img-2.jpg') no-repeat;
+}
+
+.types-item:nth-child(3){
+    background: url('../img/types-img-3.jpg') no-repeat;
+}
+
+.types-description {
+    position: relative;
+    padding: 25px 29px 49px 34px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.types-description-title {
+    margin-bottom: 13px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+
+.types-description-list {
+    list-style-image: url(../img/ellipse.svg);
+    list-style-position: inside;
+}
+
+.types-description-item {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.types-description-btn {
+    position: absolute;
+    margin-top: 23px;
 }

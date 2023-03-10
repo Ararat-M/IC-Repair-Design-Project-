@@ -99,28 +99,41 @@
                     <img src="./img/image-project.png" alt="project-img" class="project-img">
                 </div>
                 <h3 class="subtitle section-project-subtitle">ONLINE CONTROL</h3>
-                <div class="section-project-cam-svg">
+                <div style="text-align: center;" class="section-project-cam-svg">
                     <img src="./img/line.svg" alt="line.svg">
                     <img style="transform: translateY(10px); margin: 0 8px;" src="./img/cam.svg" alt="cam.svg">
                     <img src="./img/line.svg" alt="line.svg">
                 </div>
+                <div class="section-project-video">
+                    <button class="video-play-btn"></button>
+                    <video width="817" height="434" playsinline>
+                        <source src="" type="video/mp4">
+                        <source src="" type="video/webm">
+                    </video>
+                </div>
             </div>
         </section>
         <!-- ONLINE CONTROL -->
-        <section class="section-cam">
-            <div class="container section-cam-container">
-                <!-- svg line -->
-                <p class="section-cam-description">
+        <section class="section-online-control">
+            <div class="container section-online-control-container">
+                <hr style="margin: 0 auto; width: 55px; height: 1.5px; background: #E3B873; border-radius: 30px; border: none;">
+                <p class="section-online-control-description">
                     At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
                 </p>
-                <form action="" method="post" target="_blank">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" required>
-                    <label for="phone" >Phone</label>
-                    <input id="phone" name="phone" type="number" required> 
-                    <input class="btn submit-btn" type="submit" value="SUBMIT"><br>
-                    <input type="checkbox" id="processing-personal-data" name="processing-personal-data" value="processing-personal-data">
-                    <label for="processing-personal-data">
+                <form action="" method="post" target="_blank" class="section-online-control-form">
+                    <div style="margin-right: 58px;">
+                        <label style="display: block;" for="section-online-control-name">Name</label>
+                        <input required type="text" name="name" placeholder="What is your name:" class="section-online-control-input" id="section-online-control-name">
+                    </div>
+                    <div style="margin-right: 49px;">
+                        <label style="display: block;" for="section-online-control-phone" >Phone</label>
+                        <input required type="tel" name="phone" placeholder="Your phone number:"class="section-online-control-input" id="section-online-control-phone"> 
+                    </div>
+                    <button type="submit" class="btn btn-submit section-online-control-btn-submit">
+                        SUBMIT
+                    </button>
+                    <input required type="checkbox" name="processing-personal-data" class="section-online-control-checkbox" id="section-online-control-checkbox">
+                    <label class="label-checkbox" for="section-online-control-checkbox">
                         I agree to the processing of personal data
                     </label>
                 </form>
@@ -129,11 +142,16 @@
         <!-- TYPES OF REPAIR -->
         <section class="section-types">
             <div class="container section-types-container">
+                <h3 class="subtitle section-types-subtitle">TYPES OF REPAIR</h3>
+                <div style="text-align: center;" class="section-types-svg">
+                    <img src="./img/line.svg" alt="line.svg">
+                    <img style="transform: translateY(10px); margin: 0 8px;" src="./img/repair.svg" alt="cam.svg">
+                    <img src="./img/line.svg" alt="line.svg">
+                </div>
                 <ul class="types-list">
                     <li class="types-item">
-                        <img class="types-img" src="" alt="types-img">
                         <div class="types-description">
-                            <h3 class="subtitle types-description-subtitle">Redecorating</h3>
+                            <h4 class="types-description-title">Redecorating</h4>
                             <ul class="types-description-list">
                                 <li class="types-description-item">Dismantling of old coatings</li>
                                 <li class="types-description-item">Wallpapering</li>
@@ -143,15 +161,12 @@
                                 <li class="types-description-item">Replacing sockets and switches</li>
                                 <li class="types-description-item">Replacing doors</li>
                             </ul>
+                            <button class="btn types-description-btn">FROM 900 RUB / M2</button>
                         </div>
-                        <button class="btn types-btn">FROM 900 RUB / M2</button>
                     </li>
-                </ul>
-                <ul class="types-list">
                     <li class="types-item">
-                        <img class="types-img" src="" alt="types-img">
                         <div class="types-description">
-                            <h3 class="subtitle types-description-subtitle">Overhaul</h3>
+                            <h4 class="types-description-title">Overhaul</h4>
                             <ul class="types-description-list">
                                 <li class="types-description-item">Dismantling of old coatings</li>
                                 <li class="types-description-item">Wallpapering</li>
@@ -161,15 +176,12 @@
                                 <li class="types-description-item">Replacing sockets and switches</li>
                                 <li class="types-description-item">Replacing doors</li>
                             </ul>
+                            <button class="btn types-description-btn">FROM 1800 RUB / M2</button>
                         </div>
-                        <button class="btn types-btn">FROM 1800 RUB / M2</button>
                     </li>
-                </ul>
-                <ul class="types-list">
                     <li class="types-item">
-                        <img class="types-img" src="" alt="types-img">
                         <div class="types-description">
-                            <h3 class="subtitle types-description-subtitle">Designer Repair</h3>
+                            <h4 class="types-description-title">Designer Repair</h4>
                             <ul class="types-description-list">
                                 <li class="types-description-item">Dismantling of old coatings</li>
                                 <li class="types-description-item">Wallpapering</li>
@@ -179,8 +191,8 @@
                                 <li class="types-description-item">Replacing sockets and switches</li>
                                 <li class="types-description-item">Replacing doors</li>
                             </ul>
+                            <button class="btn types-description-btn">FROM 4000 RUB / M2</button>
                         </div>
-                        <button class="btn types-btn">FROM 4000 RUB / M2</button>
                     </li>
                 </ul>
             </div>
@@ -190,17 +202,19 @@
             <div class="container section-request-conteiner">
                 <form action="" method="post" target="_blank">
                     <h3 class="form-title">Leave a request for free departure of the measurer</h3>
-                    <label for="name">Name</label>
-                    <input id="name" name="name" type="text" required>
-                    <label for="phone" >Phone</label>
-                    <input id="phone" name="phone" type="number" required> 
-                    <label for="email" >Email</label>
-                    <input id="email" name="email" type="email" required><br> 
-                    <input type="checkbox" id="processing-personal-data" name="processing-personal-data" value="processing-personal-data">
-                    <label for="processing-personal-data">
+                    <label for="section-request-name">Name</label>
+                    <input required type="text" name="name" class="section-request-input" id="section-request-name">
+                    <label for="section-request-phone" >Phone</label>
+                    <input required type="tel" name="phone" class="section-request-input" id="section-request-phone"> 
+                    <label for="section-request-email" >Email</label>
+                    <input required type="email" name="email" class="section-request-input" id="section-request-email"><br> 
+                    <input required type="checkbox" name="processing-personal-data" class="section-request-checkbox" id="section-request-checkbox">
+                    <label for="section-request-checkbox">
                         I agree to the processing of personal data
                     </label><br> 
-                    <input class="btn submit-btn" type="submit" value="Call the measurer">
+                    <button type="submit" class="btn btn-submit section-request-btn-submit">
+                        Call the measurer
+                    </button>
                 </form>
                 <!-- svg img -->
                 <span class="special-offers">Help save 10 - 20% of the cost of materials</span>
