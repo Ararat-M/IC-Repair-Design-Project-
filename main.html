@@ -83,18 +83,22 @@
                         </li>
                     </ul>
                     <div class="slider">
-                        <img src="./img/vector-left.svg" alt="vector-left.svg">
+                        <button class="slider-btn">
+                            <img src="./img/vector-left.svg" alt="vector-left.svg">
+                        </button>
                         <ul class="slider-list">
                             <li class="slider-item"><img src="./img/dot-white.svg" alt="dot-white.svg"></li>
                             <li class="slider-item"><img src="./img/dot-grey.svg" alt="dot-grey.svg"></li>
                             <li class="slider-item"><img src="./img/dot-grey.svg" alt="dot-grey.svg"></li>
                         </ul>
-                        <img src="./img/vector-right.svg" alt="vector-right.svg">
+                        <button class="slider-btn">
+                            <img src="./img/vector-right.svg" alt="vector-right.svg">
+                        </button>
                     </div>
                     <ul class="address-project-list">
-                        <li class="address-project-item">Rostov-on-Don, Admiral</li>
-                        <li class="address-project-item">Sochi Thieves</li>
-                        <li class="address-project-item">Rostov-on-Don Patriotic</li>
+                        <li class="address-project-item"> <a href="" class="address-project-item-link">Rostov-on-Don Admiral</a></li>
+                        <li class="address-project-item"> <a href="" class="address-project-item-link">Sochi Thieves</a></li>
+                        <li class="address-project-item"> <a href="" class="address-project-item-link">Rostov-on-Don Patriotic</a></li>
                     </ul>
                     <img src="./img/image-project.png" alt="project-img" class="project-img">
                 </div>
@@ -122,18 +126,18 @@
                 </p>
                 <form action="" method="post" target="_blank" class="section-online-control-form">
                     <div style="margin-right: 58px;">
-                        <label style="display: block;" for="section-online-control-name">Name</label>
+                        <label class="section-online-control-label" for="section-online-control-name">Name</label>
                         <input required type="text" name="name" placeholder="What is your name:" class="section-online-control-input" id="section-online-control-name">
                     </div>
                     <div style="margin-right: 49px;">
-                        <label style="display: block;" for="section-online-control-phone" >Phone</label>
+                        <label class="section-online-control-label" for="section-online-control-phone" >Phone</label>
                         <input required type="tel" name="phone" placeholder="Your phone number:"class="section-online-control-input" id="section-online-control-phone"> 
                     </div>
                     <button type="submit" class="btn btn-submit section-online-control-btn-submit">
                         SUBMIT
                     </button>
                     <input required type="checkbox" name="processing-personal-data" class="section-online-control-checkbox" id="section-online-control-checkbox">
-                    <label class="label-checkbox" for="section-online-control-checkbox">
+                    <label class="section-online-control-label label-checkbox" for="section-online-control-checkbox">
                         I agree to the processing of personal data
                     </label>
                 </form>
@@ -217,9 +221,9 @@
                             Call the measurer
                         </button>
                     </form>
-                    <div>   
-                        <!-- svg img -->
-                        <span class="special-offers">Help save 10 - 20% of the cost of materials</span>
+                    <div class="special-offers">   
+                        <img class="special-offers-img" src="./img/special-offers-icon.svg" alt="special-offers-icon">
+                        <span class="special-offers-text">Help save 10 - 20% of the cost of materials</span>
                     </div>
                 </div>
             </div>
@@ -322,7 +326,7 @@
                     </div>
                     <div class="form-block form-block-question">    
                         <label for="any-questions-question" >Question</label>
-                        <input required type="text" name="question" placeholder="I want to know:" class="any-questions-input" id="any-questions-email"> 
+                        <input required type="text" name="question" placeholder="I want to know:" class="any-questions-input" id="any-questions-question"> 
                     </div>
                     <div class="form-block form-block-checkbox">
                         <label for="any-questions-checkbox" class="any-questions-checkbox-label">
@@ -346,7 +350,9 @@
                 <a class="section-address-icon-email" href=""><img src="./img/icon-email.svg" alt="icon-email"></a>
                 <a class="section-address-icon-social" href=""><img src="./img/icon-social.svg" alt="icon-social"></a>
             </div>
-            <div class="section-address-map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/dekorum/1113729703/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Декорум</a><a href="https://yandex.ru/maps/39/rostov-na-donu/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Ростове‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/category/sale_and_lease_of_commercial_real_estate/184107521/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Продажа и аренда коммерческой недвижимости в Ростове‑на‑Дону</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.723196%2C47.244730&mode=search&oid=1113729703&ol=biz&z=16.91" width="100%" height="465" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            <div class="section-address-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.5598455913173!2d39.72097825142111!3d47.24475492079429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47ac4fd0b%3A0xcc39a9f1a09d4979!2z0YPQuy4g0J3QsNC90YHQtdC90LAsIDIzOSwg0KDQvtGB0YLQvtCyLdC90LAt0JTQvtC90YMsINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDM0NDAzOA!5e0!3m2!1sru!2sru!4v1678960493984!5m2!1sru!2sru" width="100%" height="465" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </footer>
 

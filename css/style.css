@@ -65,6 +65,7 @@ input::placeholder {
     letter-spacing: 0em;
     text-align: center;
     color: #FFF;
+    cursor: pointer;
 }
 
 .title {
@@ -170,6 +171,7 @@ input::placeholder {
 }
 
 .section-hero-text {
+    margin-bottom: 41px;
     font-family: 'Nunito Sans';
     font-size: 22px;
     font-weight: 400;
@@ -210,7 +212,7 @@ input::placeholder {
     margin: auto auto;
     margin-bottom: 91px;
     max-width: 1171px;
-    max-height: 553px;
+    max-height: 560px;
 }
 
 .section-project-title {
@@ -237,7 +239,7 @@ input::placeholder {
 .description-project-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 68px;
+    margin-bottom: 66px;
     width: 380px;
     row-gap: 34px;
 }
@@ -282,13 +284,19 @@ input::placeholder {
     margin-right: 17px;
 }
 
+.slider-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .address-project-list{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 52px;
 }
 
-.address-project-item {
-    margin-bottom: 52px;
+.address-project-item-link {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -302,10 +310,10 @@ input::placeholder {
     margin-right: 60px;
 }
 
-.address-project-item:hover {
-    margin-bottom: 50px;
+.address-project-item-link:hover {
     color: #E3B873;
-    border-bottom: 1px solid #E3B873;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 .section-project-subtitle {
@@ -382,6 +390,11 @@ input::placeholder {
     min-height: 51px;
 }
 
+.section-online-control-label {
+    display: block;
+    color: rgba(54, 54, 54, 0.5);
+}
+
 .label-checkbox{
     margin-left: 8px;
     font-family: 'Nunito Sans';
@@ -392,6 +405,16 @@ input::placeholder {
     color: #181818;
 }
 
+.section-online-control-input {
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.section-online-control-input::placeholder {
+    color: #363636;
+}
+
+
 /* TYPES OF REPAIR */
 .section-types-container {
     max-width: 1236px;
@@ -399,7 +422,6 @@ input::placeholder {
 
 .types-list {
     margin-top: 31px;
-    /* margin-bottom: 230px; */
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
@@ -521,7 +543,28 @@ input::placeholder {
     color: #FFFFFF;
 }
 
-/* SECTION-STYLES */
+.special-offers {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 866px;
+    margin-right: 132px;
+    min-width: 441px;
+}
+
+.special-offers-text {
+    max-width: 250px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    transform: translateY(-8px)
+}
+
+/* SECTION STYLES */
 
 .section-styles {
     padding-top: 137px;
