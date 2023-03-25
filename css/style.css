@@ -518,18 +518,19 @@ input[type="checkbox"]:checked:after {
     min-height: 608px;
     flex: 0 0 33.33%;
     padding: 294px 31px 0px 31px;
+    background-repeat: no-repeat;
 }
 
 .types-item:nth-child(1) {
-    background: url('../img/types-img-1.jpg') no-repeat;
+    background: url('../img/types-img-1.jpg');
 }
 
 .types-item:nth-child(2) {
-    background: url('../img/types-img-2.jpg') no-repeat;
+    background: url('../img/types-img-2.jpg');
 }
 
 .types-item:nth-child(3) {
-    background: url('../img/types-img-3.jpg') no-repeat;
+    background: url('../img/types-img-3.jpg');
 }
 
 .types-item__description {
@@ -717,6 +718,8 @@ input[type="checkbox"]:checked:after {
 
 .section-styles__styles-img-item {
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .section-styles__styles-img-item:nth-child(1) {
@@ -724,8 +727,7 @@ input[type="checkbox"]:checked:after {
     height: 558px;
     margin-left: 587px;
     margin-top: -805px;
-    background: url('../img/section-style-img-1.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/section-style-img-1.jpg');
 }
 
 .section-styles__styles-img-item:nth-child(2) {
@@ -733,8 +735,7 @@ input[type="checkbox"]:checked:after {
     height: 349px;
     margin-left: 587px;
     margin-top: -208px;
-    background: url('../img/section-style-img-2.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/section-style-img-2.jpg');
 }
 
 .section-styles__styles-img-item:nth-child(3) {
@@ -742,8 +743,7 @@ input[type="checkbox"]:checked:after {
     height: 275px;
     margin-left: 984px;
     margin-top: -876px;
-    background: url('../img/section-style-img-3.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/section-style-img-3.jpg');
 }
 
 .section-styles__styles-img-item:nth-child(4) {
@@ -751,8 +751,7 @@ input[type="checkbox"]:checked:after {
     height: 625px;
     margin-left: 984px;
     margin-top: -562px;
-    background: url('../img/section-style-img-4.jpg') no-repeat;
-    background-size: cover;
+    background: url('../img/section-style-img-4.jpg');
 }
 
 /* OUR CLIENTS */
@@ -929,7 +928,6 @@ input[type="checkbox"]:checked:after {
 .form-question__checkbox-label {
     text-align: center;
     color: #FFFFFF;
-    ;
 }
 
 .form-question__btn-submit {
