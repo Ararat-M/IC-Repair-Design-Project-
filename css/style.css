@@ -522,15 +522,15 @@ input[type="checkbox"]:checked:after {
 }
 
 .types-item:nth-child(1) {
-    background: url('../img/types-img-1.jpg');
+    background-image: url('../img/types-img-1.jpg');
 }
 
 .types-item:nth-child(2) {
-    background: url('../img/types-img-2.jpg');
+    background-image: url('../img/types-img-2.jpg');
 }
 
 .types-item:nth-child(3) {
-    background: url('../img/types-img-3.jpg');
+    background-image: url('../img/types-img-3.jpg');
 }
 
 .types-item__description {
@@ -727,7 +727,7 @@ input[type="checkbox"]:checked:after {
     height: 558px;
     margin-left: 587px;
     margin-top: -805px;
-    background: url('../img/section-style-img-1.jpg');
+    background-image: url('../img/section-style-img-1.jpg');
 }
 
 .section-styles__styles-img-item:nth-child(2) {
@@ -735,7 +735,7 @@ input[type="checkbox"]:checked:after {
     height: 349px;
     margin-left: 587px;
     margin-top: -208px;
-    background: url('../img/section-style-img-2.jpg');
+    background-image: url('../img/section-style-img-2.jpg');
 }
 
 .section-styles__styles-img-item:nth-child(3) {
@@ -743,7 +743,7 @@ input[type="checkbox"]:checked:after {
     height: 275px;
     margin-left: 984px;
     margin-top: -876px;
-    background: url('../img/section-style-img-3.jpg');
+    background-image: url('../img/section-style-img-3.jpg');
 }
 
 .section-styles__styles-img-item:nth-child(4) {
@@ -751,7 +751,7 @@ input[type="checkbox"]:checked:after {
     height: 625px;
     margin-left: 984px;
     margin-top: -562px;
-    background: url('../img/section-style-img-4.jpg');
+    background-image: url('../img/section-style-img-4.jpg');
 }
 
 /* OUR CLIENTS */
